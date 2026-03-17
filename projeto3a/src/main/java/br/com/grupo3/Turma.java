@@ -1,4 +1,4 @@
-package br.com.grupo3.model;
+package br.com.grupo3;
 
 public class Turma {
     private String codigo;
