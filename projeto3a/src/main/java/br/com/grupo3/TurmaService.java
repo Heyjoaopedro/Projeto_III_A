@@ -1,6 +1,5 @@
 package br.com.grupo3;
 
-import br.com.grupo3.model.Turma;
 import java.util.ArrayList;
 import java.util.List;
 

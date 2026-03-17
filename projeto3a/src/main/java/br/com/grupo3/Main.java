@@ -1,8 +1,5 @@
 package br.com.grupo3;
 
-import br.com.grupo3.model.Turma;
-import br.com.grupo3.service.TurmaService;
-
 public class Main {
     public static void main(String[] args) {
         // Instancia do TurmaService
