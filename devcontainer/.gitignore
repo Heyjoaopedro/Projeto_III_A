@@ -1,0 +1,22 @@
+# Java - Arquivos compilados
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven - Pasta de build (IMPORTANTE)
+target/
+
+# IDEs (VS Code, IntelliJ, Eclipse)
+.settings/
+.project
+.classpath
+.factorypath
+.idea/
+*.iml
+.vscode/
+bin/
+
+# Logs e Temporários
+*.log
+tmp/
