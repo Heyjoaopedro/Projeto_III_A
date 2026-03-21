@@ -10,6 +10,16 @@ public class TurmaService {
     public void adicionarTurma(Turma t) {
         turmas.add(t);
     }
+    
+    // Método de busca por código
+    public Turma buscarPorCodigo(String codigo) {
+        for (Turma t : turmas) {
+            if (t.getCodigo().equalsIgnoreCase(codigo)) {
+                return t;
+            }
+        }
+        return null; // Não encontrou
+    }
 
     //Método de listagem
     public void listarTodasAsTurmas() {
