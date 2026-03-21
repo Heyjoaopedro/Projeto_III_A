@@ -16,7 +16,19 @@ public class Turma {
         this.ano = ano;
         this.limiteVagas = limiteVagas;
         this.numeroMatriculados = 0; 
+        this.alunosDaTurma = new ListaDeAlunos(limiteVagas); // iniciliza a lista de alunos com o limite de vagas
     }
+
+    //Método para matricular 
+    public boolean matricular(Aluno aluno) {
+        if (numeroMatriculados < limiteVagas) {
+            alunosDaTurma.incluirNoFim(aluno);
+            numeroMatriculados++;
+            return true;
+        }
+        return false; // Turma cheia
+    }
+    
 
     // Getters básicos
     public String getCodigo() { return codigo; }
