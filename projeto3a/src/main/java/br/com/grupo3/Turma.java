@@ -28,6 +28,25 @@ public class Turma {
         }
         return false; // Turma cheia
     }
+
+    //contador de alunos fora da idade
+    public int contarAlunosForaDaIdade() {
+        int contador = 0;
+        for (int i = 0; i < alunosDaTurma.tamanho(); i++) {
+            Aluno a = alunosDaTurma.get(i);
+            int idade = a.getIdade();
+            String etapa = this.etapaEnsino.toLowerCase();
+
+            boolean fora = false;
+            if (etapa.contains("infantil") && idade >= 6) fora = true;
+            else if (etapa.contains("iniciais") && (idade < 6 || idade > 11)) fora = true;
+            else if (etapa.contains("finais") && (idade < 11 || idade > 15)) fora = true;
+            else if (etapa.contains("médio") && (idade < 15 || idade > 18)) fora = true;
+
+            if (fora) contador++;
+        }
+        return contador;
+    }
     
 
     // Getters básicos
