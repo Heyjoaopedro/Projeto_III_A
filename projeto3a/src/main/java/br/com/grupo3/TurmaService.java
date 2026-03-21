@@ -34,4 +34,15 @@ public class TurmaService {
         }
         System.out.println("=======================================\n");
     }
+    
+    // Lsitar Alunos fora da idadade
+    public void contarAlunosForaDaIdadePorEtapa(String etapaBusca) {
+        int totalFora = 0;
+        for (Turma t : turmas) {
+            if (t.getEtapa().equalsIgnoreCase(etapaBusca)) {
+                totalFora += t.contarAlunosForaDaIdade();
+            }
+        }
+        System.out.println("Total de alunos fora da idade na etapa [" + etapaBusca + "]: " + totalFora);
+    }
 }
