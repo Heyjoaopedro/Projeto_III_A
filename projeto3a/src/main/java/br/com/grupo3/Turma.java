@@ -48,10 +48,10 @@ public class Turma {
         return contador;
     }
     
-
-    // Getters básicos
     public String getCodigo() { return codigo; }
     public String getEtapa() { return etapaEnsino; }
+    public int getNumeroMatriculados() { return numeroMatriculados; }
+    public ListaDeAlunos getAlunosDaTurma() { return alunosDaTurma; }
 
     @Override
     public String toString() {
