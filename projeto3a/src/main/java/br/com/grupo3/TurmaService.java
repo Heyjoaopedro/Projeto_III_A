@@ -6,11 +6,12 @@ import java.util.List;
 public class TurmaService {
     private List<Turma> turmas = new ArrayList<>();
 
-    // Método para adicionar
+    // Método para adicionar 
     public void adicionarTurma(Turma t) {
         turmas.add(t);
+        System.out.println("Turma " + t.getCodigo() + " cadastrada com sucesso!");
     }
-    
+
     // Método de busca por código
     public Turma buscarPorCodigo(String codigo) {
         for (Turma t : turmas) {
