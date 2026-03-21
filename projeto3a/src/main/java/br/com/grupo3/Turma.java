@@ -53,9 +53,9 @@ public class Turma {
     public int getNumeroMatriculados() { return numeroMatriculados; }
     public ListaDeAlunos getAlunosDaTurma() { return alunosDaTurma; }
 
-    @Override
+   @Override
     public String toString() {
-        return String.format("Cód: %s | Etapa: %s | Ano: %d | Vagas: %d/%d", 
+        return String.format("Cód: %-5s | Etapa: %-20s | Ano: %d | Vagas: %d/%d", 
             codigo, etapaEnsino, ano, numeroMatriculados, limiteVagas);
     }
 }
