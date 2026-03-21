@@ -7,12 +7,15 @@ public class Turma {
     private int limiteVagas;
     private int numeroMatriculados;
 
+    // Lista de alunos para cada turma
+    private ListaDeAlunos alunosDaTurma;
+
     public Turma(String codigo, String etapaEnsino, int ano, int limiteVagas) {
         this.codigo = codigo;
         this.etapaEnsino = etapaEnsino;
         this.ano = ano;
         this.limiteVagas = limiteVagas;
-        this.numeroMatriculados = 0; // Começa vazia
+        this.numeroMatriculados = 0; 
     }
 
     // Getters básicos
