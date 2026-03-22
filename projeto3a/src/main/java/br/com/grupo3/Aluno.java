@@ -21,6 +21,9 @@ public class Aluno {
     }
 
     public String getNome() { return nome; }
+    public String getCpf() { return cpf; }
+    public String getEndereco() { return endereco; }
+    public LocalDate getDataNascimento() { return dataNascimento; }
 
     @Override
     public String toString() {
