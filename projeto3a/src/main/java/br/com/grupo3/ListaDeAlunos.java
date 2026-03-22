@@ -16,6 +16,33 @@ public class ListaDeAlunos {
         }
     }
 
+    // Os dois métodos a seguir não são utilizados no projeto, mas estão aqui para mostrar que sabemos implementá-los.  
+    public void incluirNoInicio(Aluno aluno) {
+        if (tamanho < elementos.length) {
+            // Empurra todo mundo uma casa para a direita
+            for (int i = tamanho; i > 0; i--) {
+                elementos[i] = elementos[i - 1];
+            }
+            // indice 0 livre
+            elementos[0] = aluno;
+            tamanho++;
+        } else {
+            System.out.println("Lista cheia!");
+        }
+    }   
+    public Aluno removerDoFim() {
+        if (tamanho > 0) {
+            // Guarda o aluno para retornar no final
+            Aluno removido = elementos[tamanho - 1];
+            // Limpa a posição
+            elementos[tamanho - 1] = null;
+            tamanho--;
+            return removido;
+        }
+        return null; // Lista já estava vazia
+    }
+    //fim dos métodos não utilizados, mas implementados para mostrar conhecimento.
+
     public int tamanho() { return tamanho; }
 
     public Aluno get(int indice) {
@@ -36,5 +63,4 @@ public class ListaDeAlunos {
         }
     }
     // Fazer o incluirNoInicio e removerDoFim se sobrar tempo, 
-    // mas o 'incluirNoFim' e 'ordenar' são os motores do projeto.
 }
