@@ -19,7 +19,7 @@ public class Main {
             System.out.println("1. Cadastrar Aluno");
             System.out.println("2. Cadastrar Turma");
             System.out.println("3. Matricular Aluno em Turma");
-            System.out.println("4. Listar Alunos (Ordem Alfabética)");
+            System.out.println("4. Listar Alunos");
             System.out.println("5. Listar Turmas");
             System.out.println("6. Alunos Fora da Idade por Etapa");
             System.out.println("7. Listar Alunos de uma Turma");
