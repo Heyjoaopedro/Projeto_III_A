@@ -84,6 +84,9 @@ A idade é calculada com base na **data de nascimento** e na **data atual**.
 
 ### Executar via Maven (opcional)
 - Caso o Maven não esteja configurado para executar diretamente, utilize a execução pela IDE.
-- Se o projeto estiver configurado com plugin de execução:
-```bash
-mvn clean compile exec:java
+-  cd C:\Users\user\Desktop\fix_Entrega_Projeto3A\fix_Entrega_Projeto3A\projeto3a
+   mvn exec:java -Dexec.mainClass="br.com.grupo3.Main"
+
+  Ou, se preferir rodar direto com Java após compilar:
+
+   java -cp target\classes br.com.grupo3.Main
